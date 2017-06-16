@@ -25,5 +25,5 @@
   ginkgo -r -p --noisyPendings --skipPackage=cmd
 
   echo -e "\n Vetting packages for potential issues..."
-  go tool vet cmd db models restapi controllers vpslager
+  go tool vet cmd db generated controllers vpslager test_helpers
 )
